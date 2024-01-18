@@ -35,3 +35,50 @@ section {
         flex-direction: column;
     }
 }
+
+/* Mobile prikaz */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav, header, section, footer {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Tablet prikaz */
+@media screen and (min-width: 601px) {
+    nav, header, section, footer {
+        padding: 20px;
+    }
+
+    #projects, #skills, #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Desktop prikaz */
+@media screen and (min-width: 1025px) {
+    header, footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 0 15px;
+    }
+
+    #projects, #skills, #gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
