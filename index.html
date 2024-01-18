@@ -1,97 +1,113 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Moj Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
-            Navigacija
+            <ul>
+                <li class="nav-link">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
-    <section id="home">
-        Home
-    </section>
+    <main class="main-content">
+        <section id="home">
+            <h2>Home</h2>
+        </section>
+        
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                Davud Skelić, brucoš na Politehničkom fakultetu u Zenici, odsjek za Softverski inženjering.
+                Prethodno završena Medicinska škola u Zenici odličnim uspjehom.
+            </p>
+        </section>
 
-    <section id="about">
-        <h2>O meni</h2> 
-        <p>
-            Davud Skelić, brucoš na Politehničkom fakultetu u Zenici, odsjek za Softverski inženjering.
-            Prethodno završena Medicinska škola u Zenici odličnim uspjehom.
-        </p>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <h3>Baza podataka za Taxi kompaniju</h3>
+            <p>
+                Baza podataka za Taxi kompaniju ELEKTRONSKIH vozila je urađena u Microsoft access-u. Pogodna je i za
+                korištenje od strane uposlenika,
+                kao i od strane klijenata. Uposlenici mogu bazu koristiti bez upotrebe dodatnih aplikacija ili ui-a, dok je
+                dio namijenjen za klijente potrebno iskoristiti u nekoj prilagođenoj mobilnoj aplikaciji. Kompletan pristup
+                je zaštičen šiframa koje
+                diktiraju nivo pristupa bazi.
+            </p>
+            <h4>Funkcionalnosti za klijente:</h4>
+            <ul>
+                <li>Odabir rute</li>
+                <li>Opcija biranja vozača</li>
+                <li>Odabir broja putnika</li>
+                <li>Opcija popusta za invalide/studente/penzionere</li>
+                <li>Finalna cijena se izračunava automatski po odabiru prethodnih parametara</li>
+            </ul>
+            <h4>Funkcionalnosti za vozače:</h4>
+            <ul>
+                <li>Odabir vozila u odnosu na dužinu relacije i broj putnika</li>
+                <li>Uvid lokacija punjača i njihove brzine</li>
+            </ul>
+            <h4>Funkcionalnosti za admina:</h4>
+            <ul>
+                <li>Dodavanje i uklanjanje vozača</li>
+                <li>Uređivanje podataka o vozaču</li>
+                <li>Dodavanje i uklanjanje vozila</li>
+                <li>Uređivanje podataka o vozilu</li>
+                <li>Dodavanje i uklanjanje popusta</li>
+                <li>Uređivanje popusta</li>
+                <li>Opcija pretrage klijenata po imenu</li>
+                <li>Opcija pretrage svih vožnji po imenu vozača i po datumu</li>
+                <li>Uvid u zaduženja vozila i pretraga po datumu</li>
+                <li>Uvid u Ukupno pređenu kilometražu, broj vožnji i prihod kompanije</li>
+                <li>Uvid u vozila koja je potrebno zamijeniti</li>
+            </ul>
+        </section>
 
-    <section id="projects">
-        <h2>Projekti</h2> 
-        <h3>Baza podataka za Taxi kompaniju</h3>
-        <p>
-            Baza podataka za Taxi kompaniju ELEKTRONSKIH vozila je urađena u Microsoft access-u. Pogodna je i za korištenje od strane uposlenika, 
-            kao i od strane klijenata. Uposlenici mogu bazu koristiti bez upotrebe dodatnih aplikacija ili ui-a, dok je 
-            dio namijenjen za klijente potrebno iskoristiti u nekoj prilagođenoj mobilnoj aplikaciji. Kompletan pristup je zaštičen šiframa koje 
-            diktiraju nivo pristupa bazi. 
-        </p>
-        <h4>Funkcionalnosti za klijente:</h4>
-        <ul>
-            <li>Odabir rute</li>
-            <li>Opcija biranja vozača</li>
-            <li>Odabir broja putnika</li>
-            <li>Opcija popusta za invalide/studente/penzionere</li>
-            <li>Finalna cijena se izračunava automatski po odabiru prethodnih parametara</li>
-        </ul>
-        <h4>Funkcionalnosti za vozače:</h4>
-        <ul>
-            <li>Odabir vozila u odnosu na dužinu relacije i broj putnika</li>
-            <li>Uvid lokacija punjača i njihove brzine</li>
-        </ul>
-        <h4>Funkcionalnosti za admina:</h4>
-        <ul>
-            <li>Dodavanje i uklanjanje vozača</li>
-            <li>Uređivanje podataka o vozaču</li>
-            <li>Dodavanje i uklanjanje vozila</li>
-            <li>Uređivanje podataka o vozilu</li>
-            <li>Dodavanje i uklanjanje popusta</li>
-            <li>Uređivanje popusta</li>
-            <li>Opcija pretrage klijenata po imenu</li>
-            <li>Opcija pretrage svih vožnji po imenu vozača i po datumu</li>
-            <li>Uvid u zaduženja vozila i pretraga po datumu</li>
-            <li>Uvid u Ukupno pređenu kilometražu, broj vožnji i prihod kompanije</li>
-            <li>Uvid u vozila koja je potrebno zamijeniti</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Dizajn</li>
+                <li>Rad u c++</li>
+                <li>Rad sa bazama podataka</li>
+                <li>Electronic workbench</li>
+                <li>Rad u Html-u i Css-u</li>
+                <li>Poznavanje engleskog jezika</li>
+                <li>Poznavanje njemačkog jezika</li>
+                <li>Upravljanje vozilima A i B kategorija</li>
+                <li>Tehničar opće medicine</li>
+                <li>Fitness trener</li>
+            </ul>
+        </section>
 
-    <section id="skills">
-        <h2>Vještine</h2> 
-        <ul>
-            <li>Dizajn</li>
-            <li>Rad u c++</li>
-            <li>Rad sa bazama podataka</li>
-            <li>Electronic workbench</li>
-            <li>Rad u Html-u i Css-u</li>
-            <li>Poznavanje engleskog jezika</li>
-            <li>Poznavanje njemačkog jezika</li>
-            <li>Upravljanje vozilima A i B kategorija</li>
-            <li>Tehničar opće medicine</li>
-            <li>Fitness trener</li>
-        </ul>
-    </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+        </section>
 
-    <section id="gallery">
-        Galerija
-    </section>
-
-    <section id="contact">
-        <h2>Kontakt</h2> 
-        <ul>
-            <li>E-mail: davud.skelic.23@size.ba</li>
-            <li>Telefon: +38762555149</li>
-            <li>GitHub: skelicc</li>
-        </ul>
-    </section>
-
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>E-mail: davud.skelic.23@size.ba</li>
+                <li>Telefon: +38762555149</li>
+                <li>GitHub: skelicc</li>
+            </ul>
+        </section>
+</main>
+    
     <footer>
-        Dodatne informacije
+        Additional info
     </footer>
 </body>
+
 </html>

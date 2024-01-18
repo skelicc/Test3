@@ -20,14 +20,21 @@ nav a {
     text-decoration: none;
 }
 
-section {
-    padding: 2em;
+.nav-link:hover {
+    a:hover{
+        color: #c64e4e;
+    }
 }
 
-#projects, #skills, #gallery {
+.main-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1em;
+    grid-template-columns: 1;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -54,10 +61,6 @@ nav, header, section, footer {
         padding: 20px;
     }
 
-    #projects, #skills, #gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 /* Desktop prikaz */
@@ -76,9 +79,5 @@ nav, header, section, footer {
 
     nav a {
         margin: 0 15px;
-    }
-
-    #projects, #skills, #gallery {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
