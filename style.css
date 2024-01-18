@@ -140,18 +140,13 @@ h2{
     background-color: #2b809a;
 }
 
-#skills li{
-    width: 100%;
+#skills ul {
+    list-style: none;
 }
 
 #skills img{
-    width: 50%;
+    height: 120px;
     padding-top: 20%;
-}
-
-#skills ul{
-    list-style: none;
-    display: flex;
 }
 
 #gallery{
@@ -168,7 +163,17 @@ h2{
     flex-wrap: wrap;
 }
 
+#skill-container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
 
+.first-half, .second-half {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
 
 .painting {
     border: 2px solid #2b809a;
@@ -229,11 +234,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #contact ul{
     list-style: none;
     font-size: 160%;
     padding-right: 2%;
 }
+
 #contact {
     padding-top: 2%;
 }
@@ -267,6 +274,14 @@ nav, header, section, footer {
         flex-direction: column;
         justify-content: start;
         align-items: center;
+    }
+
+    #skill-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 50px;
     }
 }
 
