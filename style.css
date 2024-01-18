@@ -1,17 +1,71 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: aliceblue;
 }
 
 .main-content {
     display: grid;
     grid-template-columns: 1;
-    background-color: #cdcdcd;
+    background-color: aliceblue;
     margin: 50px;
     padding-right: 50px;
     padding-left: 10px;
     text-align: start;
 }
+.panel{
+    width: 100%;
+    height: 500px;
+    background-color: #2b809a;
+    display: flex;
+}
+.panel img{
+    width: 100%;
+    border-radius: 80%;
+}
+.mojaslika, .titula{
+    padding: 2%;
+    
+}
+.mojaslika h1{
+    padding-left: 11%;
+    font-size: 200%;
+    color: whitesmoke;
+    padding-top: 4%;
+}
+.mojaslika{
+    background-color: #333;
+    width: 20%;
+    padding-top: 2%;
+}
+.titula{
+    width: 80%;
+    padding-top: 4%;
 
+}
+.titula h1{
+    text-align: center;
+    font-size: 270%;
+}
+#home{
+    font-size: 0%;
+    padding: 0%;
+    
+}
+#about{
+    padding-top: 5%;
+}
+#about p{
+    font-size: 140%;
+    
+}
+.sso img{
+    width: 100%;
+    
+}
+
+header div{
+    width: 20%;
+}
 p, h3 {
     text-align: left;
 }
@@ -19,23 +73,33 @@ p, h3 {
 h1, h2, h3 { 
     font-weight: bold;
 }
-
+header{
+    display: flex;
+    width: 100%;
+    height: 110px;
+}
 header, footer {
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 1em;
+}
+footer, header div{
+    text-align: center;
+}
+nav li{ 
+    font-size: 130%;
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 
 nav a {
     margin: 0 1em;
     color: white;
     text-decoration: none;
+    
 }
 
 nav ul {
@@ -49,10 +113,28 @@ nav ul {
 }
 
 section {
-    display: flex;
-    flex-direction: column;
     width: 100%;
 }
+#projects{
+    height: fit-content;  
+    background-color: #2b809a;
+    padding-bottom: 5%;
+}
+h2{
+    font-size: 180%;
+}
+
+.lll{
+    background-color: aliceblue;
+    height: 50px;
+}
+#skills{
+    background-color: #2b809a;
+}
+#gallery{
+    background-color: #2b809a;
+}
+
 
 .painting {
     border: 2px solid #2b809a;
